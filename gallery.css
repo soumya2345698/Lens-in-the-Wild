@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,500&display=swap');
+*{
+    font-family:'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    transition: all 2s linear;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+   
+    background: #d0caca;
+}
+ .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:3rem 2rem;
+ }
+
+ .container .title{
+    font-size: 3.5rem;
+    color:#0f0101;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    background-color: rgb(244, 246, 248);
+    background-origin: solid;
+    text-align: center;
+ }
+
+ .container .photosto-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
+    gap:2rem;
+    transition: 0s;
+ }
+
+ .container .photosto-container .photo{
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #958c8c81;
+    box-shadow: 0.0rem 0.0rem rgba(0,0,0,.1);
+    outline: .2rem solid #3a0303;
+    outline-offset: -1.5rem;
+    cursor:pointer;
+
+ }
+
+ .container .photosto-container .photo:hover{
+    outline:.3rem solid #222;
+    outline-offset: 0;
+ }
+ 
+ .container .photosto-container .photo img{
+   height: 25rem;
+ }
+
+ .container.photosto-container .photo:hover img{
+   transform: scale(.9);
+ }
+
+ .container .photosto-container .photo h3{
+      padding: .5rem 0;
+      font-size: 2rem;
+      color:rgb(86, 64, 157)
+ }
+
+ .container .photosto-container .photo:hover h3{
+   color: rgb(133, 4, 15);
+ }
+ .container .photosto-container .photo .price{
+   font-size: 2rem;
+   color: #444;
+ }
